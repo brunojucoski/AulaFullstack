@@ -1,0 +1,17 @@
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\config\SecurityConfig.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\config\SecurityFilter.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\entitys\Produtos.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\entitys\Usuarios.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\ExemploSecurityApi2Application.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\jwt\TokenService.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\service\EmailService.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\service\ProdutoService.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\service\UsuarioService.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\useCase\domains\ProdutoRequestDom.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\useCase\domains\ProdutosResponseDom.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\useCase\domains\UsuarioRequestDom.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\useCase\domains\UsuariosResponseDom.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\useCase\mappers\ProdutosMapper.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\useCase\mappers\UsuariosMapper.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\useCase\repositorys\ProdutoRepository.java
+C:\Users\bruno.jucoski\Documents\AulaFullstack-main\exemplo-security-api2\src\main\java\br\com\senac2\exemplo_security_api2\useCase\repositorys\Usuariorepository.java
