@@ -1,5 +1,6 @@
 package br.com.senac2.exemplo_security_api2.jwt;
 
+import br.com.senac2.exemplo_security_api2.entitys.Usuario;
 import br.com.senac2.exemplo_security_api2.entitys.Usuarios;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
@@ -20,7 +21,7 @@ public class TokenService {
     @Value("${spring.security.token.expiration_time}")
     private Long expirationTime;
 
-    public String gerarToken(Usuarios usuario) throws Exception {
+    public String gerarToken(Usuario usuario) throws Exception {
         try {
             Algorithm algorithm = Algorithm.HMAC256(secret);
 

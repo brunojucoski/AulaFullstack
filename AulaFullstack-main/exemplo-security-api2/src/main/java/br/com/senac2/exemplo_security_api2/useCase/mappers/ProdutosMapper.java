@@ -1,6 +1,6 @@
 package br.com.senac2.exemplo_security_api2.useCase.mappers;
 
-import br.com.senac2.exemplo_security_api2.entitys.Produtos;
+import br.com.senac2.exemplo_security_api2.entitys.Produto;
 import br.com.senac2.exemplo_security_api2.entitys.Usuarios;
 import br.com.senac2.exemplo_security_api2.useCase.domains.ProdutoRequestDom;
 import br.com.senac2.exemplo_security_api2.useCase.domains.ProdutosResponseDom;
