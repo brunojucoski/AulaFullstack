@@ -14,6 +14,8 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 import java.util.UUID;
 
+import static br.com.senac2.exemplo_security_api2.useCase.mappers.ProdutosMapper.produtoRequestDomToProdutos;
+
 @Service
 @RequiredArgsConstructor
 public class ProdutoService {
@@ -24,7 +26,7 @@ public class ProdutoService {
 
 
     public ProdutosResponseDom criarProduto(ProdutoRequestDom produto) {
-        Produto produtosPersit = ProdutosMapper.produtoRequestDomToProdutos(produto);
+        Produto produtosPersit = produtoRequestDomToProdutos(produto);
 
 
         Produto produtosResult =

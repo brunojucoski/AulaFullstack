@@ -2,7 +2,7 @@ package br.com.senac2.exemplo_security_api2.config;
 
 import br.com.senac2.exemplo_security_api2.entitys.Usuario;
 import br.com.senac2.exemplo_security_api2.jwt.TokenService;
-import br.com.senac2.exemplo_security_api2.useCase.repositorys.Usuariorepository;
+import br.com.senac2.exemplo_security_api2.useCase.repositorys.UsuarioRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -22,7 +22,7 @@ public class SecurityFilter extends OncePerRequestFilter {
     @Autowired
     TokenService tokenService;
     @Autowired
-    Usuariorepository usuarioRepository;
+    UsuarioRepository usuarioRepository;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {

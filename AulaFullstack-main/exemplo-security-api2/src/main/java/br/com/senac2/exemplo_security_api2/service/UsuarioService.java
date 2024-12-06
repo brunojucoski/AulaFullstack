@@ -6,7 +6,7 @@ import br.com.senac2.exemplo_security_api2.jwt.TokenService;
 import br.com.senac2.exemplo_security_api2.useCase.domains.UsuarioRequestDom;
 import br.com.senac2.exemplo_security_api2.useCase.domains.UsuariosResponseDom;
 import br.com.senac2.exemplo_security_api2.useCase.mappers.UsuariosMapper;
-import br.com.senac2.exemplo_security_api2.useCase.repositorys.Usuariorepository;
+import br.com.senac2.exemplo_security_api2.useCase.repositorys.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ import java.util.Optional;
 @Service
 public class UsuarioService {
     @Autowired
-    private Usuariorepository usuariorepository;
+    private UsuarioRepository usuarioRepository;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
@@ -30,14 +30,14 @@ public class UsuarioService {
         usuariosPersit.setSenha(passwordEncoder.encode(usuario.getSenha()));
 
         Usuario usuariosResult =
-                    usuariorepository.save(usuariosPersit);
+                    usuarioRepository.save(usuariosPersit);
 
         return UsuariosMapper .usuariosToUsuariosResponseDom(usuariosResult);
     }
 
     public UsuariosResponseDom loginUsuario(UsuarioRequestDom usuario) throws Exception {
         Optional<Usuario> usuarioResult =
-                usuariorepository.findByLogin(usuario.getLogin());
+                usuarioRepository.findByLogin(usuario.getLogin());
         if (usuarioResult.isPresent()){
             if(passwordEncoder.matches(
                     usuario.getSenha(),
