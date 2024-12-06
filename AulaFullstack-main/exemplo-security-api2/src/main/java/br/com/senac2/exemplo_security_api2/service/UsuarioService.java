@@ -1,6 +1,7 @@
 package br.com.senac2.exemplo_security_api2.service;
 
-import br.com.senac2.exemplo_security_api2.entitys.Usuarios;
+import br.com.senac2.exemplo_security_api2.entitys.Usuario;
+import br.com.senac2.exemplo_security_api2.entitys.Usuario;
 import br.com.senac2.exemplo_security_api2.jwt.TokenService;
 import br.com.senac2.exemplo_security_api2.useCase.domains.UsuarioRequestDom;
 import br.com.senac2.exemplo_security_api2.useCase.domains.UsuariosResponseDom;
@@ -24,18 +25,18 @@ public class UsuarioService {
     private TokenService tokenService;
 
     public UsuariosResponseDom criarUsuario(UsuarioRequestDom usuario) {
-        Usuarios usuariosPersit = UsuariosMapper.usuarioRequestDomToUsuarios(usuario);
+        Usuario usuariosPersit = UsuariosMapper.usuarioRequestDomToUsuarios(usuario);
 
         usuariosPersit.setSenha(passwordEncoder.encode(usuario.getSenha()));
 
-        Usuarios usuariosResult =
+        Usuario usuariosResult =
                     usuariorepository.save(usuariosPersit);
 
         return UsuariosMapper .usuariosToUsuariosResponseDom(usuariosResult);
     }
 
     public UsuariosResponseDom loginUsuario(UsuarioRequestDom usuario) throws Exception {
-        Optional<Usuarios> usuarioResult =
+        Optional<Usuario> usuarioResult =
                 usuariorepository.findByLogin(usuario.getLogin());
         if (usuarioResult.isPresent()){
             if(passwordEncoder.matches(

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AulaFullstack.iml" filepath="$PROJECT_DIR$/.idea/AulaFullstack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AulaFullstack-main/exemplo-security-api2/exemplo-security-api2.iml" filepath="$PROJECT_DIR$/AulaFullstack-main/exemplo-security-api2/exemplo-security-api2.iml" />
     </modules>
   </component>
 </project>

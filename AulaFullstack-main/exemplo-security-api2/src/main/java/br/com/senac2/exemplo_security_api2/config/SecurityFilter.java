@@ -1,6 +1,6 @@
 package br.com.senac2.exemplo_security_api2.config;
 
-import br.com.senac2.exemplo_security_api2.entitys.Usuarios;
+import br.com.senac2.exemplo_security_api2.entitys.Usuario;
 import br.com.senac2.exemplo_security_api2.jwt.TokenService;
 import br.com.senac2.exemplo_security_api2.useCase.repositorys.Usuariorepository;
 import jakarta.servlet.FilterChain;
@@ -30,7 +30,7 @@ public class SecurityFilter extends OncePerRequestFilter {
         var login = tokenService.validaToken(token);
 
         if(login != null){
-            Usuarios usuario = usuarioRepository.findByLogin(login).orElseThrow(() -> new RuntimeException("Usuário não encontrado"));
+            Usuario usuario = usuarioRepository.findByLogin(login).orElseThrow(() -> new RuntimeException("Usuário não encontrado"));
             var authorities = Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER"));
             var authentication = new UsernamePasswordAuthenticationToken(usuario, null, authorities);
             SecurityContextHolder.getContext().setAuthentication(authentication);
